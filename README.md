@@ -1,6 +1,8 @@
 # map-test
 map test (Mapbox GL JS ver 1, ArcGIS API, QGIS)
 
+# test URL  
+https://ubukawa.github.io/map-test/  
 
 # References  
 https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js  
