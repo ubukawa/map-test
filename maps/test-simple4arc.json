@@ -1,0 +1,40 @@
+{
+  "version": 8,
+  "name": "test-simple",
+  "sources": {
+    "un-s": {
+      "type": "vector",
+      "tiles": ["https://ubukawa.github.io/testDB/un-s/{z}/{x}/{y}.pbf"],
+      "minZoom": 0,
+      "maxzoom": 4
+    }
+  },
+  "sprite": "https://ubukawa.github.io/style_test3/sprite_test/sprite_S",
+  "glyphs": "https://ubukawa.github.io/style_test3/font/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "maxzoom": 6,
+      "layout": {"visibility": "visible"},
+      "paint": {"background-color": "rgba(193, 255, 235, 1)"}
+    },
+    {
+      "id": "landmass",
+      "type": "fill",
+      "source": "un-s",
+      "source-layer": "landmass",
+      "maxzoom": 6,
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(0, 97, 77, 1)"}
+    },
+    {
+      "id": "bndl",
+      "type": "line",
+      "source": "un-s",
+      "source-layer": "hq_bnd",
+      "maxzoom": 6,
+      "layout": {"visibility": "visible"}
+    }
+  ]
+}
