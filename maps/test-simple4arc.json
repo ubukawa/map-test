@@ -1,23 +1,16 @@
 {
-  "version": 8,
-  "name": "test-simple",
-  "sources": {
-    "un-s": {
-      "type": "vector",
-      "tiles": ["https://ubukawa.github.io/testDB/un-s/{z}/{x}/{y}.pbf"],
-      "minZoom": 0,
-      "maxzoom": 4
-    }
-  },
-  "sprite": "https://ubukawa.github.io/style_test3/sprite_test/sprite_S",
+  "center": [
+    0,
+    0
+  ],
   "glyphs": "https://ubukawa.github.io/style_test3/font/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
-      "type": "background",
-      "maxzoom": 6,
-      "layout": {"visibility": "visible"},
-      "paint": {"background-color": "rgba(193, 255, 235, 1)"}
+      "paint": {
+        "background-color": "#D6EBF5"
+      },
+      "type": "background"
     },
     {
       "id": "landmass",
@@ -25,7 +18,6 @@
       "source": "un-s",
       "source-layer": "landmass",
       "maxzoom": 6,
-      "layout": {"visibility": "visible"},
       "paint": {"fill-color": "rgba(0, 97, 77, 1)"}
     },
     {
@@ -34,7 +26,17 @@
       "source": "un-s",
       "source-layer": "hq_bnd",
       "maxzoom": 6,
-      "layout": {"visibility": "visible"}
+      "paint": {"line-color": "rgba(0, 100, 100, 1)"}
     }
-  ]
-}
+  ],
+    "sources": {
+    "un-s": {
+      "type": "vector",
+      "tiles": ["https://ubukawa.github.io/testDB/un-s/{z}/{x}/{y}.pbf"],
+      "minZoom": 0,
+      "maxzoom": 4
+    }
+  },
+  "sprite": "https://ubukawa.github.io/style_test3/sprite_test/sprite_S",
+  "version": 8
+  }

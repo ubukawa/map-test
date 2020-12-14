@@ -40,7 +40,8 @@
       "source": "un-s",
       "source-layer": "hq_bnd",
       "maxzoom": 6,
-      "layout": {"visibility": "visible"}
+      "layout": {"visibility": "visible"},
+      "paint": {"line-color": "rgba(0, 97, 77, 1)"}
     }
   ]
 }
