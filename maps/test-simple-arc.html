@@ -104,7 +104,7 @@
                       urlTemplate: "https://cyberjapandata.gsi.go.jp/xyz/std/{level}/{col}/{row}.png",
                       copyright: "GSI tile https://maps.gsi.go.jp/development/ichiran.html"
                     })],
-                    title: "GSI tile -std",
+                    title: "GSI tile - Raster sample",
                     id: "stdmap",
                     thumbnailUrl: "https://cyberjapandata.gsi.go.jp/xyz/std/12/3637/1612.png"
                 });     
@@ -113,6 +113,8 @@
                 const testMap = new Basemap({
                     baseLayers:[new VectorTileLayer({
                       url: "https://ubukawa.github.io/map-test/maps/test-simple.json",
+                      //url: "https://ubukawa.github.io/map-test/maps/test-simple4arc.json",
+                      //url: "https://ubukawa.github.io/map-test/maps/test-simple4arc.json",
                       //url: "https://ubukawa.github.io/ArcGISAPI_test1/cartotile-test.json",
                       copyright: "test"
                     })],
@@ -122,7 +124,7 @@
 
                
                 const map = new Map({
-                    basemap: testMapMap
+                    basemap: testMap
                     //basemap: stdMap
                     //basemap: basemap
                     //basemap: "osm"
